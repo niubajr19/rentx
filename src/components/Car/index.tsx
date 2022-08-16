@@ -50,7 +50,7 @@ export function Car({ data }: Props) {
             </Details>
             <CarImage
                 source={{ uri: data.thumbnail }}
-                resizeMode="cover" />
+                resizeMode="contain" />
         </Container>
     );
 }

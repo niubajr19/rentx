@@ -1,5 +1,6 @@
 import React from 'react';
 import AppLoading from 'expo-app-loading';
+import 'react-native-gesture-handler';
 
 import { Home } from './src/screens/Home';
 
@@ -15,6 +16,7 @@ import {
 } from '@expo-google-fonts/archivo';
 import { ThemeProvider } from 'styled-components';
 import theme from './src/styles/theme';
+import { CarDetails } from './src/screens/CarDetails';
 
 
 export default function App() {
@@ -32,7 +34,8 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Home />
+      {/* <Home /> */}
+      <CarDetails />
     </ThemeProvider>
   )
 }
